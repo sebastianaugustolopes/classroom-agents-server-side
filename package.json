@@ -16,7 +16,9 @@
   "type": "commonjs",
   "dependencies": {
     "@fastify/cors": "^11.2.0",
+    "@fastify/multipart": "^9.3.0",
     "@google/genai": "^1.33.0",
+    "@types/multer": "^2.0.0",
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.45.1",
     "drizzle-seed": "^0.3.1",
