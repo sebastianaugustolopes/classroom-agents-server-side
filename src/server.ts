@@ -35,7 +35,11 @@ app.register(getRoomQuestions)
 app.register(createQuestionRoute)
 app.register(uploadAudioRoute)
 
-app.listen({ 
-    port: env.PORT, 
-    host: '0.0.0.0' 
+const port = Number(process.env.PORT) || 3333
+
+app.listen({
+  port,
+  host: '0.0.0.0',
+}).then(() => {
+  console.log(`Server running on port ${port}`)
 })
