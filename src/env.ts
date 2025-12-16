@@ -6,7 +6,7 @@ const envSchema = z.object({
   DATABASE_URL: z.string().url(),
   GEMINI_API_KEY: z.string(),
 
-  FRONTEND_URL: z.string().url(), 
+  FRONTEND_URL: z.string(), 
 })
 
 export const env = envSchema.parse(process.env)
